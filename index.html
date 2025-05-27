@@ -1,4 +1,5 @@
 <img src="me.jpg" alt="张博昊" class="avatar">
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -7,102 +8,126 @@
     <title>张博昊 - 个人简历</title>
     <style>
         body {
-            font-family: 'Microsoft YaHei', Arial, sans-serif;
-            background: #f4f6fa;
+            background: linear-gradient(135deg, #f0f4fa 0%, #e9eef6 100%);
+            min-height: 100vh;
             margin: 0;
-            padding: 0;
         }
-        .container {
-            max-width: 800px;
+        .resume-container {
+            max-width: 780px;
+            margin: 42px auto 32px auto;
             background: #fff;
-            margin: 40px auto;
-            padding: 36px 32px;
-            border-radius: 14px;
-            box-shadow: 0 4px 32px rgba(0,0,0,0.07);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(44, 75, 128, 0.12);
+            padding: 42px 34px 32px 34px;
         }
         .avatar {
             display: block;
-            margin: 0 auto 16px auto;
-            width: 130px;
-            height: 130px;
+            margin: 0 auto 12px auto;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 2px 12px rgba(58,68,93,0.12);
-            border: 4px solid #f4f6fa;
+            box-shadow: 0 2px 16px rgba(44,75,128,0.09);
+            border: 5px solid #f5f8fd;
         }
-        h1, h2 {
-            color: #3a445d;
-        }
-        h1 {
+        .name {
+            text-align: center;
             font-size: 2.3em;
-            margin-bottom: 10px;
+            font-weight: bold;
+            color: #293962;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+        .contact {
             text-align: center;
+            color: #6d7ca6;
+            margin-bottom: 18px;
+            font-size: 1.08em;
         }
-        h2 {
-            margin-top: 32px;
-            font-size: 1.4em;
-            border-left: 4px solid #3a86ff;
-            padding-left: 10px;
-            background: linear-gradient(to right,#e3f2fd 60%,#fff 100%);
-        }
-        ul {
-            margin: 0 0 16px 20px;
-        }
-        .info {
-            color: #506480;
-            margin-bottom: 26px;
-            text-align: center;
+        .contact .icon {
+            margin-right: 5px;
+            font-size: 1.1em;
+            vertical-align: middle;
         }
         .section {
-            margin-bottom: 26px;
+            margin-bottom: 32px;
         }
-        .award {
-            color: #405080;
+        .section-title {
+            font-size: 1.24em;
+            font-weight: 600;
+            color: #375ba8;
+            background: linear-gradient(to right, #c9e2fd 70%, #fff 100%);
+            padding: 8px 18px;
+            border-left: 5px solid #60a8fa;
+            border-radius: 4px;
+            margin-bottom: 12px;
         }
-        @media (max-width:600px) {
-            .container {
-                padding: 20px 6px;
-            }
-            h1 {
-                font-size: 1.2em;
+        ul {
+            margin: 0 0 0 26px;
+            padding: 0;
+            color: #2e3d52;
+            font-size: 1.07em;
+        }
+        li {
+            margin-bottom: 9px;
+            line-height: 1.85;
+        }
+        .sub-list {
+            margin-top: 0px;
+            margin-bottom: 8px;
+            margin-left: 14px;
+            font-size: 0.99em;
+        }
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 16px 2px 20px 2px;
+                max-width: 98vw;
             }
             .avatar {
-                width: 90px;
-                height: 90px;
+                width: 82px;
+                height: 82px;
+            }
+            .name {
+                font-size: 1.3em;
+            }
+            .section-title {
+                font-size: 1em;
+                padding: 6px 10px;
             }
         }
     </style>
+    <!-- 如使用在线图标可引入fontawesome等 -->
 </head>
 <body>
-<div class="container">
+<div class="resume-container">
     <img src="me.jpg" alt="张博昊" class="avatar">
-    <h1>张博昊</h1>
-    <div class="info">
-        <div>📞 (+86) 18770154706</div>
-        <div>✉️ bohao.23@intl.zju.edu.cn</div>
+    <div class="name">张博昊</div>
+    <div class="contact">
+        <span class="icon">📞</span>(+86) 18770154706<br>
+        <span class="icon">✉️</span>bohao.23@intl.zju.edu.cn
     </div>
 
     <div class="section">
-        <h2>求职意向</h2>
+        <div class="section-title">求职意向</div>
         <ul><li>实习</li></ul>
     </div>
 
     <div class="section">
-        <h2>教育背景</h2>
+        <div class="section-title">教育背景</div>
         <ul>
-            <li>2019.09-2023.06 浙江大学（985）电气工程 本科</li>
-            <li>2023.09-至今 浙江大学（985）电气工程 硕士</li>
+            <li>2019.09-2023.06 浙江大学（985） 电气工程 本科</li>
+            <li>2023.09-至今 浙江大学（985） 电气工程 硕士</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>科研项目</h2>
+        <div class="section-title">科研项目</div>
         <ul>
             <li>2023.09-至今：发表专利基于神经网络预测器的逆变器控制方法、装置及系统。<br>专利号：202411668604.3</li>
             <li>投稿2025 IEEE International Conference on Predictive Control of Electrical Drives and Power Electronics 两篇，目前已经接收</li>
             <li>投稿Control Engineering Practice 一篇，返稿修改中，修改后已提交</li>
             <li>2024.03-2024.12：基于国产宽禁带器件的多端口柔性互联装置 南京电网项目
-                <ul>
+                <ul class="sub-list">
                     <li>协调学校与电网之间的工作进度</li>
                     <li>进行项目相关的研究，推进项目进度</li>
                     <li>与项目组一起完成项目指标</li>
@@ -112,7 +137,7 @@
     </div>
 
     <div class="section">
-        <h2>荣誉奖励</h2>
+        <div class="section-title">荣誉奖励</div>
         <ul>
             <li>2024年12月 浙江大学，优秀研究生荣誉</li>
             <li>2023年5月 浙江大学，浙江大学优秀毕业生荣誉</li>
@@ -127,7 +152,7 @@
     </div>
 
     <div class="section">
-        <h2>技能证书</h2>
+        <div class="section-title">技能证书</div>
         <ul>
             <li>大学英语六级CET-6（通过），Duolingo135分，阅读英文文献无障碍。</li>
             <li>熟练使用Office软件包括Word，Excel，PPT</li>
@@ -135,7 +160,7 @@
     </div>
 
     <div class="section">
-        <h2>社会经历</h2>
+        <div class="section-title">社会经历</div>
         <ul>
             <li>2021.08 - 2021.09，浙江大学军训参训干部（后勤部）</li>
             <li>2024.09 - 至今，浙江大学研究生指导中心（干事）</li>
